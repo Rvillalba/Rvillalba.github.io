@@ -2,7 +2,7 @@
 
 layout: page
 title: "Contact Me"
-permalink: https://rvillalba.github.io/contact
+permalink: /contact
 
 ---
 
