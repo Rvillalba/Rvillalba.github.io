@@ -5,7 +5,7 @@
 layout: default
 title: Homepage
 ---
-![Profile Image](assets/images/ProfilePhoto.jpg){: style="float: center", width="150"}
+![Profile Image](assets/images/ProfilePhoto.jpg){: style="float: right", width="150"}
 # Rudy Villalba
 
 My name is Rodolfo (Rudy) Villalba. I have a decade of experience as a Knowledge Engineer, and love troubleshooting a good problem. I am looking to leverage my experience eliciting subject matter experts and designing probability models to become an asset for a software development team.
