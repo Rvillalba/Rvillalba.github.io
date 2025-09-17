@@ -4,6 +4,8 @@
 
 layout: default
 title: Homepage
+layout: default
+title: Homepage
 ---
 ![Profile Image](assets/images/Profilepic.jpg){: style="float: right", width="150"}
 # Rudy Villalba
