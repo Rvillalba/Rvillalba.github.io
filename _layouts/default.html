@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+        {% if page.profile_image or site.profile_image %}
+
+ <nav class="main-nav">
+    <ul>
+      {% for item in site.data.navigation %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+            <img src="{{ page.profile_image | default: site.profile_image }}" 
+            alt="{{ site.title }} Profile" 
+            style="width:100px; height:100px; border-radius:50%; margin-bottom:10px;">
+         {% endif %}
+
+
+
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+
+
+    {% if page.show_github_button != false and (page.github_url or site.github.repository_url) %}
+        <a href="{{ page.github_url | default: site.github.repository_url }}" class="btn">
+    {% if page.github_label %}
+      {{ page.github_label }}
+    {% else %}
+      Rudy on GitHub
+    {% endif %}
+        </a>
+    {% endif %}
+
+    {% if page.show_linkedin_button != false and (page.linkedin_url or site.linkedin.url) %}
+        <a href="{{ page.linkedin_url | default: site.linkedin.url }}" class="btn">
+        {{ page.linkedin_label | default: site.linkedin.label }}
+        </a>
+    {% endif %}
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner">{{ site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">Rudy Villalba</a>.</span>
+        {% endif %}
+      </footer>
+    </main>
+  </body>
+</html>

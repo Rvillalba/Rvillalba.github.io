@@ -1,0 +1,13 @@
+<nav>
+  <ul>
+    {% for item in site.data.navigation %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  {% if page.github_button_url %}
+    <a href="{{ page.github_button_url }}" class="btn">GitHub</a>
+  {% else %}
+    <a href="{{ site.github.url }}" class="btn">GitHub</a>
+  {% endif %}
+</nav>

@@ -1,7 +1,14 @@
 ---
-layout: page
+layout: default
 title: "Resume"
 permalink: /resume/
+description: ""
+
+show_github_button: false      # hides GitHub button
+show_linkedin_button: true     # shows LinkedIn button
+linkedin_url: "https://www.linkedin.com/in/rudy-villalba"
+linkedin_label: "Rudy on LinkedIn"
+github_url: "https://github.com/Rvillalba/resume-repo"
 ---
 [⬇️ Download Resume (PDF)](/assets/files/resume.pdf){:target="_blank"}
 # Summary
