@@ -34,7 +34,7 @@ github:
   url: "https://github.com/Rvillalba"
 
 # Build settings
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
